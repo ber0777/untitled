@@ -1,0 +1,674 @@
+<html>
+<head>
+<title>TestNG:  Service Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Service Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>66/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 14 20:28:59 GMT+04:00 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (64 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.getLifetimePointsReturnsEarnedPoints()'><b>getLifetimePointsReturnsEarnedPoints</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.getReservedStockStartsAtZero()'><b>getReservedStockStartsAtZero</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.authenticateAcceptsCorrectCredentials()'><b>authenticateAcceptsCorrectCredentials</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.lockUserLocksTheAccount()'><b>lockUserLocksTheAccount</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.shipOrderRejectsUnpaidOrder()'><b>shipOrderRejectsUnpaidOrder</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.IllegalOrderStateException: Cannot ship order in status: PENDING
+	at am.gortsup.testing.service.OrderService.shipOrder(OrderService.java:115)
+	at am.gortsup.testing.service.OrderServiceTest.shipOrderRejectsUnpaidOrder(OrderServiceTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1710989308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710989308'><pre>am.gortsup.testing.exception.IllegalOrderStateException: Cannot ship order in status: PENDING
+	at am.gortsup.testing.service.OrderService.shipOrder(OrderService.java:115)
+	at am.gortsup.testing.service.OrderServiceTest.shipOrderRejectsUnpaidOrder(OrderServiceTest.java:128)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.getProductsByCategoryReturnsMatchingActiveProducts()'><b>getProductsByCategoryReturnsMatchingActiveProducts</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.getOrdersByUserReturnsUsersOrders()'><b>getOrdersByUserReturnsUsersOrders</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.calculateTotalIncludesDiscountAndTax()'><b>calculateTotalIncludesDiscountAndTax</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.transferPointsMovesPointsBetweenUsers()'><b>transferPointsMovesPointsBetweenUsers</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.getPointsReturnsCurrentBalance()'><b>getPointsReturnsCurrentBalance</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.deactivateUserMarksAccountInactive()'><b>deactivateUserMarksAccountInactive</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.isInStockChecksRequestedQuantity()'><b>isInStockChecksRequestedQuantity</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.reserveStockMovesUnitsToReservedStock()'><b>reserveStockMovesUnitsToReservedStock</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.updateQuantityChangesItemCount()'><b>updateQuantityChangesItemCount</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.applyCategoryDiscountChangesMatchingPrices()'><b>applyCategoryDiscountChangesMatchingPrices</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.reserveStockRejectsQuantityAboveAvailableStock()'><b>reserveStockRejectsQuantityAboveAvailableStock</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.InsufficientStockException: Cannot reserve 2 units of sku; only 1 available
+	at am.gortsup.testing.service.InventoryService.reserveStock(InventoryService.java:90)
+	at am.gortsup.testing.service.InventoryServiceTest.reserveStockRejectsQuantityAboveAvailableStock(InventoryServiceTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1239759990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1239759990'><pre>am.gortsup.testing.exception.InsufficientStockException: Cannot reserve 2 units of sku; only 1 available
+	at am.gortsup.testing.service.InventoryService.reserveStock(InventoryService.java:90)
+	at am.gortsup.testing.service.InventoryServiceTest.reserveStockRejectsQuantityAboveAvailableStock(InventoryServiceTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.removeItemRemovesProductFromCart()'><b>removeItemRemovesProductFromCart</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.registerUserRejectsDuplicateUsername()'><b>registerUserRejectsDuplicateUsername</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.ValidationException: Username already exists: nina
+	at am.gortsup.testing.service.UserService.registerUser(UserService.java:48)
+	at am.gortsup.testing.service.UserServiceTest.registerUserRejectsDuplicateUsername(UserServiceTest.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2114444063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2114444063'><pre>am.gortsup.testing.exception.ValidationException: Username already exists: nina
+	at am.gortsup.testing.service.UserService.registerUser(UserService.java:48)
+	at am.gortsup.testing.service.UserServiceTest.registerUserRejectsDuplicateUsername(UserServiceTest.java:172)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.removeCouponRemovesAppliedCoupon()'><b>removeCouponRemovesAppliedCoupon</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.addProductRejectsNegativePrice()'><b>addProductRejectsNegativePrice</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.ValidationException: Product price cannot be negative: -1.0
+	at am.gortsup.testing.service.ProductCatalogService.addProduct(ProductCatalogService.java:41)
+	at am.gortsup.testing.service.ProductCatalogServiceTest.addProductRejectsNegativePrice(ProductCatalogServiceTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2005169944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2005169944'><pre>am.gortsup.testing.exception.ValidationException: Product price cannot be negative: -1.0
+	at am.gortsup.testing.service.ProductCatalogService.addProduct(ProductCatalogService.java:41)
+	at am.gortsup.testing.service.ProductCatalogServiceTest.addProductRejectsNegativePrice(ProductCatalogServiceTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.getAllActiveProductsReturnsActiveCatalogEntries()'><b>getAllActiveProductsReturnsActiveCatalogEntries</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.getUserTierUsesLifetimePoints()'><b>getUserTierUsesLifetimePoints</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.getUserByIdFindsRegisteredUser()'><b>getUserByIdFindsRegisteredUser</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.createOrderCreatesPendingOrder()'><b>createOrderCreatesPendingOrder</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.deactivateProductHidesProductFromSearch()'><b>deactivateProductHidesProductFromSearch</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.getProductByIdReturnsMatchingProduct()'><b>getProductByIdReturnsMatchingProduct</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.changePasswordAllowsLoginWithNewPassword()'><b>changePasswordAllowsLoginWithNewPassword</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.getStockReturnsZeroForUnknownProduct()'><b>getStockReturnsZeroForUnknownProduct</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.registerUserCreatesCustomerWhenRoleIsNull()'><b>registerUserCreatesCustomerWhenRoleIsNull</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.transferPointsRejectsSelfTransfer()'><b>transferPointsRejectsSelfTransfer</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.ValidationException: Cannot transfer points to the same account
+	at am.gortsup.testing.service.LoyaltyService.transferPoints(LoyaltyService.java:156)
+	at am.gortsup.testing.service.LoyaltyServiceTest.transferPointsRejectsSelfTransfer(LoyaltyServiceTest.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798219673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1798219673'><pre>am.gortsup.testing.exception.ValidationException: Cannot transfer points to the same account
+	at am.gortsup.testing.service.LoyaltyService.transferPoints(LoyaltyService.java:156)
+	at am.gortsup.testing.service.LoyaltyServiceTest.transferPointsRejectsSelfTransfer(LoyaltyServiceTest.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.calculateSubtotalMultipliesPriceByQuantity()'><b>calculateSubtotalMultipliesPriceByQuantity</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.getOrderReturnsOrderById()'><b>getOrderReturnsOrderById</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.payOrderChangesStatusToPaid()'><b>payOrderChangesStatusToPaid</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.redeemPointsReducesCurrentBalance()'><b>redeemPointsReducesCurrentBalance</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.deliverOrderChangesStatusToDelivered()'><b>deliverOrderChangesStatusToDelivered</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.deductStockRemovesReservedUnits()'><b>deductStockRemovesReservedUnits</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.getTierDiscountPercentageReturnsTierDiscount()'><b>getTierDiscountPercentageReturnsTierDiscount</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.getProductsInPriceRangeReturnsProductsWithinBounds()'><b>getProductsInPriceRangeReturnsProductsWithinBounds</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.releaseStockReturnsUnitsToAvailableStock()'><b>releaseStockReturnsUnitsToAvailableStock</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.addPointsIncreasesCurrentAndLifetimeBalances()'><b>addPointsIncreasesCurrentAndLifetimeBalances</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.searchProductsByNameFindsPartialCaseInsensitiveMatch()'><b>searchProductsByNameFindsPartialCaseInsensitiveMatch</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.getOrdersByStatusReturnsMatchingOrders()'><b>getOrdersByStatusReturnsMatchingOrders</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.getCartItemsReturnsItemsInCart()'><b>getCartItemsReturnsItemsInCart</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.applyCouponRejectsExpiredCoupon()'><b>applyCouponRejectsExpiredCoupon</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.InvalidCouponException: Coupon OLD is expired
+	at am.gortsup.testing.service.ShoppingCartService.applyCoupon(ShoppingCartService.java:112)
+	at am.gortsup.testing.service.ShoppingCartServiceTest.applyCouponRejectsExpiredCoupon(ShoppingCartServiceTest.java:153)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1550207152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1550207152'><pre>am.gortsup.testing.exception.InvalidCouponException: Coupon OLD is expired
+	at am.gortsup.testing.service.ShoppingCartService.applyCoupon(ShoppingCartService.java:112)
+	at am.gortsup.testing.service.ShoppingCartServiceTest.applyCouponRejectsExpiredCoupon(ShoppingCartServiceTest.java:153)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.shipOrderSetsTrackingNumberAndStatus()'><b>shipOrderSetsTrackingNumberAndStatus</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.addItemAddsProductToCart()'><b>addItemAddsProductToCart</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.setStockRejectsNegativeQuantity()'><b>setStockRejectsNegativeQuantity</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.ValidationException: Stock quantity cannot be negative: -1
+	at am.gortsup.testing.service.InventoryService.setStock(InventoryService.java:29)
+	at am.gortsup.testing.service.InventoryServiceTest.setStockRejectsNegativeQuantity(InventoryServiceTest.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1438030319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1438030319'><pre>am.gortsup.testing.exception.ValidationException: Stock quantity cannot be negative: -1
+	at am.gortsup.testing.service.InventoryService.setStock(InventoryService.java:29)
+	at am.gortsup.testing.service.InventoryServiceTest.setStockRejectsNegativeQuantity(InventoryServiceTest.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.calculateDiscountAmountCalculatesCouponDiscount()'><b>calculateDiscountAmountCalculatesCouponDiscount</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.unlockUserClearsLockAndFailedAttempts()'><b>unlockUserClearsLockAndFailedAttempts</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.restockAddsAvailableUnits()'><b>restockAddsAvailableUnits</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.getItemCountReturnsSumOfQuantities()'><b>getItemCountReturnsSumOfQuantities</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.updateEmailChangesUserEmail()'><b>updateEmailChangesUserEmail</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.cancelOrderCancelsPendingOrder()'><b>cancelOrderCancelsPendingOrder</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.addProductAddsProductToCatalog()'><b>addProductAddsProductToCatalog</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.updateProductPriceRoundsToTwoDecimals()'><b>updateProductPriceRoundsToTwoDecimals</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.clearCartRemovesItemsAndCoupon()'><b>clearCartRemovesItemsAndCoupon</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.payOrderRejectsInvalidCardNumber()'><b>payOrderRejectsInvalidCardNumber</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td><div><pre>am.gortsup.testing.exception.PaymentFailedException: Invalid credit card number: Luhn check failed
+	at am.gortsup.testing.service.OrderService.payOrder(OrderService.java:90)
+	at am.gortsup.testing.service.OrderServiceTest.payOrderRejectsInvalidCardNumber(OrderServiceTest.java:136)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1208121709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208121709'><pre>am.gortsup.testing.exception.PaymentFailedException: Invalid credit card number: Luhn check failed
+	at am.gortsup.testing.service.OrderService.payOrder(OrderService.java:90)
+	at am.gortsup.testing.service.OrderServiceTest.payOrderRejectsInvalidCardNumber(OrderServiceTest.java:136)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ShoppingCartServiceTest.applyCouponAttachesValidCoupon()'><b>applyCouponAttachesValidCoupon</b><br>Test class: am.gortsup.testing.service.ShoppingCartServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.getAllUsersReturnsRegisteredUsers()'><b>getAllUsersReturnsRegisteredUsers</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.OrderServiceTest.refundOrderChangesPaidOrderToRefunded()'><b>refundOrderChangesPaidOrderToRefunded</b><br>Test class: am.gortsup.testing.service.OrderServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.OrderServiceTest@64c87930</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.authenticateLocksAccountAfterThreeFailures()'><b>authenticateLocksAccountAfterThreeFailures</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.ProductCatalogServiceTest.activateProductMakesProductActiveAgain()'><b>activateProductMakesProductActiveAgain</b><br>Test class: am.gortsup.testing.service.ProductCatalogServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.ProductCatalogServiceTest@157632c9</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.InventoryServiceTest.setStock()'><b>setStock</b><br>Test class: am.gortsup.testing.service.InventoryServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.InventoryServiceTest@6ee12bac</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.hasPermissionChecksCustomerPermissions()'><b>hasPermissionChecksCustomerPermissions</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.UserServiceTest.getUserByUsernameIgnoresCase()'><b>getUserByUsernameIgnoresCase</b><br>Test class: am.gortsup.testing.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.UserServiceTest@36f0f1be</td></tr>
+<tr>
+<td title='am.gortsup.testing.service.LoyaltyServiceTest.calculateTierReturnsCorrectTierAtBoundaries()'><b>calculateTierReturnsCorrectTierAtBoundaries</b><br>Test class: am.gortsup.testing.service.LoyaltyServiceTest</td>
+<td></td>
+<td>0</td>
+<td>am.gortsup.testing.service.LoyaltyServiceTest@400cff1a</td></tr>
+</table><p>
+</body>
+</html>

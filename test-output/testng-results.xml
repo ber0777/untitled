@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="102" passed="102" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-14T20:28:59 GMT+04:00" name="Testing Task Test Suite" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="257">
+    <groups>
+    </groups>
+    <test started-at="2026-10-14T20:28:59 GMT+04:00" name="Utility Tests" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="108">
+      <class name="am.gortsup.testing.util.MathAndFinanceUtilsTest">
+        <test-method signature="calculateCompoundInterest()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateCompoundInterest" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateCompoundInterest -->
+        <test-method signature="calculateDiscount()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateDiscount" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateDiscount -->
+        <test-method signature="calculatePercentageChange()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculatePercentageChange" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatePercentageChange -->
+        <test-method signature="calculateMonthlyInstallment()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateMonthlyInstallment" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateMonthlyInstallment -->
+        <test-method signature="calculateTax()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateTax" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateTax -->
+        <test-method signature="calculateTaxRejectsNegativeAmount()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateTaxRejectsNegativeAmount" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Amount cannot be negative]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Amount cannot be negative
+at am.gortsup.testing.util.MathAndFinanceUtils.calculateTax(MathAndFinanceUtils.java:26)
+at am.gortsup.testing.util.MathAndFinanceUtilsTest.calculateTaxRejectsNegativeAmount(MathAndFinanceUtilsTest.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateTaxRejectsNegativeAmount -->
+        <test-method signature="isValidLuhn()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidLuhn" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidLuhn -->
+        <test-method signature="convertCurrency()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="convertCurrency" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertCurrency -->
+        <test-method signature="roundToDecimalPlaces()[pri:0, instance:am.gortsup.testing.util.MathAndFinanceUtilsTest@2698dc7]" started-at="2026-10-14T20:28:59 GMT+04:00" name="roundToDecimalPlaces" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roundToDecimalPlaces -->
+      </class> <!-- am.gortsup.testing.util.MathAndFinanceUtilsTest -->
+      <class name="am.gortsup.testing.util.ValidationUtilsTest">
+        <test-method signature="isPositiveNumber()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isPositiveNumber" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isPositiveNumber -->
+        <test-method signature="isValidEmail(java.lang.String,boolean)[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidEmail" data-provider="emailCases" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidEmail -->
+        <test-method signature="isValidEmail(java.lang.String,boolean)[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidEmail" data-provider="emailCases" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a..b@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidEmail -->
+        <test-method signature="isValidIban()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidIban" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidIban -->
+        <test-method signature="isValidEmail(java.lang.String,boolean)[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidEmail" data-provider="emailCases" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidEmail -->
+        <test-method signature="isValidEmail(java.lang.String,boolean)[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidEmail" data-provider="emailCases" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidEmail -->
+        <test-method signature="isValidIpAddress()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidIpAddress" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidIpAddress -->
+        <test-method signature="isValidPassword()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidPassword" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidPassword -->
+        <test-method signature="isValidPhoneNumber()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidPhoneNumber" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidPhoneNumber -->
+        <test-method signature="isValidUrl()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidUrl" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidUrl -->
+        <test-method signature="isValidPostalCode()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isValidPostalCode" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidPostalCode -->
+        <test-method signature="sanitizeInput()[pri:0, instance:am.gortsup.testing.util.ValidationUtilsTest@5427c60c]" started-at="2026-10-14T20:28:59 GMT+04:00" name="sanitizeInput" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanitizeInput -->
+      </class> <!-- am.gortsup.testing.util.ValidationUtilsTest -->
+      <class name="am.gortsup.testing.util.DateTimeUtilsTest">
+        <test-method signature="addBusinessDays()[pri:0, instance:am.gortsup.testing.util.DateTimeUtilsTest@43d7741f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="addBusinessDays" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBusinessDays -->
+        <test-method signature="calculateDaysBetween()[pri:0, instance:am.gortsup.testing.util.DateTimeUtilsTest@43d7741f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateDaysBetween" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateDaysBetween -->
+        <test-method signature="calculateBusinessDaysBetween()[pri:0, instance:am.gortsup.testing.util.DateTimeUtilsTest@43d7741f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateBusinessDaysBetween" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateBusinessDaysBetween -->
+        <test-method signature="doIntervalsOverlap()[pri:0, instance:am.gortsup.testing.util.DateTimeUtilsTest@43d7741f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="doIntervalsOverlap" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doIntervalsOverlap -->
+        <test-method signature="isDateInRange()[pri:0, instance:am.gortsup.testing.util.DateTimeUtilsTest@43d7741f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isDateInRange" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isDateInRange -->
+        <test-method signature="isLeapYear()[pri:0, instance:am.gortsup.testing.util.DateTimeUtilsTest@43d7741f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isLeapYear" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isLeapYear -->
+        <test-method signature="isWeekend()[pri:0, instance:am.gortsup.testing.util.DateTimeUtilsTest@43d7741f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isWeekend" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isWeekend -->
+      </class> <!-- am.gortsup.testing.util.DateTimeUtilsTest -->
+      <class name="am.gortsup.testing.util.StringUtilsTest">
+        <test-method signature="capitalizeWords()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="capitalizeWords" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capitalizeWords -->
+        <test-method signature="isPalindrome()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isPalindrome" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isPalindrome -->
+        <test-method signature="countOccurrences()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="countOccurrences" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countOccurrences -->
+        <test-method signature="maskCreditCard()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="maskCreditCard" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maskCreditCard -->
+        <test-method signature="toSlug()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="toSlug" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toSlug -->
+        <test-method signature="reverseWords()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="reverseWords" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reverseWords -->
+        <test-method signature="truncate()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="truncate" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- truncate -->
+        <test-method signature="truncateRejectsTooShortLength()[pri:0, instance:am.gortsup.testing.util.StringUtilsTest@44f75083]" started-at="2026-10-14T20:28:59 GMT+04:00" name="truncateRejectsTooShortLength" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[maxLength cannot be less than suffix length]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: maxLength cannot be less than suffix length
+at am.gortsup.testing.util.StringUtils.truncate(StringUtils.java:90)
+at am.gortsup.testing.util.StringUtilsTest.truncateRejectsTooShortLength(StringUtilsTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- truncateRejectsTooShortLength -->
+      </class> <!-- am.gortsup.testing.util.StringUtilsTest -->
+    </test> <!-- Utility Tests -->
+    <test started-at="2026-10-14T20:28:59 GMT+04:00" name="Service Tests" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="64">
+      <class name="am.gortsup.testing.service.UserServiceTest">
+        <test-method signature="authenticateAcceptsCorrectCredentials()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="authenticateAcceptsCorrectCredentials" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticateAcceptsCorrectCredentials -->
+        <test-method signature="changePasswordAllowsLoginWithNewPassword()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="changePasswordAllowsLoginWithNewPassword" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordAllowsLoginWithNewPassword -->
+        <test-method signature="authenticateLocksAccountAfterThreeFailures()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="authenticateLocksAccountAfterThreeFailures" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticateLocksAccountAfterThreeFailures -->
+        <test-method signature="deactivateUserMarksAccountInactive()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="deactivateUserMarksAccountInactive" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactivateUserMarksAccountInactive -->
+        <test-method signature="getAllUsersReturnsRegisteredUsers()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getAllUsersReturnsRegisteredUsers" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersReturnsRegisteredUsers -->
+        <test-method signature="getUserByIdFindsRegisteredUser()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getUserByIdFindsRegisteredUser" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserByIdFindsRegisteredUser -->
+        <test-method signature="getUserByUsernameIgnoresCase()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getUserByUsernameIgnoresCase" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserByUsernameIgnoresCase -->
+        <test-method signature="hasPermissionChecksCustomerPermissions()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="hasPermissionChecksCustomerPermissions" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hasPermissionChecksCustomerPermissions -->
+        <test-method signature="lockUserLocksTheAccount()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="lockUserLocksTheAccount" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lockUserLocksTheAccount -->
+        <test-method signature="registerUserCreatesCustomerWhenRoleIsNull()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="registerUserCreatesCustomerWhenRoleIsNull" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserCreatesCustomerWhenRoleIsNull -->
+        <test-method signature="registerUserRejectsDuplicateUsername()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="registerUserRejectsDuplicateUsername" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <exception class="am.gortsup.testing.exception.ValidationException">
+            <message>
+              <![CDATA[Username already exists: nina]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.ValidationException: Username already exists: nina
+at am.gortsup.testing.service.UserService.registerUser(UserService.java:48)
+at am.gortsup.testing.service.UserServiceTest.registerUserRejectsDuplicateUsername(UserServiceTest.java:172)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.ValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserRejectsDuplicateUsername -->
+        <test-method signature="unlockUserClearsLockAndFailedAttempts()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="unlockUserClearsLockAndFailedAttempts" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unlockUserClearsLockAndFailedAttempts -->
+        <test-method signature="updateEmailChangesUserEmail()[pri:0, instance:am.gortsup.testing.service.UserServiceTest@36f0f1be]" started-at="2026-10-14T20:28:59 GMT+04:00" name="updateEmailChangesUserEmail" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmailChangesUserEmail -->
+      </class> <!-- am.gortsup.testing.service.UserServiceTest -->
+      <class name="am.gortsup.testing.service.ProductCatalogServiceTest">
+        <test-method signature="activateProductMakesProductActiveAgain()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="activateProductMakesProductActiveAgain" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activateProductMakesProductActiveAgain -->
+        <test-method signature="addProductRejectsNegativePrice()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="addProductRejectsNegativePrice" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <exception class="am.gortsup.testing.exception.ValidationException">
+            <message>
+              <![CDATA[Product price cannot be negative: -1.0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.ValidationException: Product price cannot be negative: -1.0
+at am.gortsup.testing.service.ProductCatalogService.addProduct(ProductCatalogService.java:41)
+at am.gortsup.testing.service.ProductCatalogServiceTest.addProductRejectsNegativePrice(ProductCatalogServiceTest.java:121)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.ValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductRejectsNegativePrice -->
+        <test-method signature="addProductAddsProductToCatalog()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="addProductAddsProductToCatalog" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductAddsProductToCatalog -->
+        <test-method signature="applyCategoryDiscountChangesMatchingPrices()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="applyCategoryDiscountChangesMatchingPrices" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyCategoryDiscountChangesMatchingPrices -->
+        <test-method signature="deactivateProductHidesProductFromSearch()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="deactivateProductHidesProductFromSearch" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactivateProductHidesProductFromSearch -->
+        <test-method signature="getAllActiveProductsReturnsActiveCatalogEntries()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getAllActiveProductsReturnsActiveCatalogEntries" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllActiveProductsReturnsActiveCatalogEntries -->
+        <test-method signature="getProductByIdReturnsMatchingProduct()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getProductByIdReturnsMatchingProduct" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductByIdReturnsMatchingProduct -->
+        <test-method signature="getProductsByCategoryReturnsMatchingActiveProducts()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getProductsByCategoryReturnsMatchingActiveProducts" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductsByCategoryReturnsMatchingActiveProducts -->
+        <test-method signature="getProductsInPriceRangeReturnsProductsWithinBounds()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getProductsInPriceRangeReturnsProductsWithinBounds" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductsInPriceRangeReturnsProductsWithinBounds -->
+        <test-method signature="searchProductsByNameFindsPartialCaseInsensitiveMatch()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="searchProductsByNameFindsPartialCaseInsensitiveMatch" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductsByNameFindsPartialCaseInsensitiveMatch -->
+        <test-method signature="updateProductPriceRoundsToTwoDecimals()[pri:0, instance:am.gortsup.testing.service.ProductCatalogServiceTest@157632c9]" started-at="2026-10-14T20:28:59 GMT+04:00" name="updateProductPriceRoundsToTwoDecimals" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProductPriceRoundsToTwoDecimals -->
+      </class> <!-- am.gortsup.testing.service.ProductCatalogServiceTest -->
+      <class name="am.gortsup.testing.service.OrderServiceTest">
+        <test-method signature="cancelOrderCancelsPendingOrder()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="cancelOrderCancelsPendingOrder" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelOrderCancelsPendingOrder -->
+        <test-method signature="createOrderCreatesPendingOrder()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="createOrderCreatesPendingOrder" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrderCreatesPendingOrder -->
+        <test-method signature="deliverOrderChangesStatusToDelivered()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="deliverOrderChangesStatusToDelivered" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deliverOrderChangesStatusToDelivered -->
+        <test-method signature="getOrderReturnsOrderById()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getOrderReturnsOrderById" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderReturnsOrderById -->
+        <test-method signature="getOrdersByStatusReturnsMatchingOrders()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getOrdersByStatusReturnsMatchingOrders" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrdersByStatusReturnsMatchingOrders -->
+        <test-method signature="getOrdersByUserReturnsUsersOrders()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getOrdersByUserReturnsUsersOrders" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrdersByUserReturnsUsersOrders -->
+        <test-method signature="payOrderChangesStatusToPaid()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="payOrderChangesStatusToPaid" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payOrderChangesStatusToPaid -->
+        <test-method signature="payOrderRejectsInvalidCardNumber()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="payOrderRejectsInvalidCardNumber" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <exception class="am.gortsup.testing.exception.PaymentFailedException">
+            <message>
+              <![CDATA[Invalid credit card number: Luhn check failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.PaymentFailedException: Invalid credit card number: Luhn check failed
+at am.gortsup.testing.service.OrderService.payOrder(OrderService.java:90)
+at am.gortsup.testing.service.OrderServiceTest.payOrderRejectsInvalidCardNumber(OrderServiceTest.java:136)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.PaymentFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payOrderRejectsInvalidCardNumber -->
+        <test-method signature="refundOrderChangesPaidOrderToRefunded()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="refundOrderChangesPaidOrderToRefunded" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refundOrderChangesPaidOrderToRefunded -->
+        <test-method signature="shipOrderRejectsUnpaidOrder()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="shipOrderRejectsUnpaidOrder" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <exception class="am.gortsup.testing.exception.IllegalOrderStateException">
+            <message>
+              <![CDATA[Cannot ship order in status: PENDING]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.IllegalOrderStateException: Cannot ship order in status: PENDING
+at am.gortsup.testing.service.OrderService.shipOrder(OrderService.java:115)
+at am.gortsup.testing.service.OrderServiceTest.shipOrderRejectsUnpaidOrder(OrderServiceTest.java:128)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.IllegalOrderStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shipOrderRejectsUnpaidOrder -->
+        <test-method signature="shipOrderSetsTrackingNumberAndStatus()[pri:0, instance:am.gortsup.testing.service.OrderServiceTest@64c87930]" started-at="2026-10-14T20:28:59 GMT+04:00" name="shipOrderSetsTrackingNumberAndStatus" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shipOrderSetsTrackingNumberAndStatus -->
+      </class> <!-- am.gortsup.testing.service.OrderServiceTest -->
+      <class name="am.gortsup.testing.service.ShoppingCartServiceTest">
+        <test-method signature="addItemAddsProductToCart()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="addItemAddsProductToCart" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemAddsProductToCart -->
+        <test-method signature="applyCouponAttachesValidCoupon()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="applyCouponAttachesValidCoupon" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyCouponAttachesValidCoupon -->
+        <test-method signature="applyCouponRejectsExpiredCoupon()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="applyCouponRejectsExpiredCoupon" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <exception class="am.gortsup.testing.exception.InvalidCouponException">
+            <message>
+              <![CDATA[Coupon OLD is expired]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.InvalidCouponException: Coupon OLD is expired
+at am.gortsup.testing.service.ShoppingCartService.applyCoupon(ShoppingCartService.java:112)
+at am.gortsup.testing.service.ShoppingCartServiceTest.applyCouponRejectsExpiredCoupon(ShoppingCartServiceTest.java:153)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.InvalidCouponException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyCouponRejectsExpiredCoupon -->
+        <test-method signature="calculateSubtotalMultipliesPriceByQuantity()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateSubtotalMultipliesPriceByQuantity" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateSubtotalMultipliesPriceByQuantity -->
+        <test-method signature="calculateDiscountAmountCalculatesCouponDiscount()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateDiscountAmountCalculatesCouponDiscount" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateDiscountAmountCalculatesCouponDiscount -->
+        <test-method signature="calculateTotalIncludesDiscountAndTax()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateTotalIncludesDiscountAndTax" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateTotalIncludesDiscountAndTax -->
+        <test-method signature="getCartItemsReturnsItemsInCart()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getCartItemsReturnsItemsInCart" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCartItemsReturnsItemsInCart -->
+        <test-method signature="getItemCountReturnsSumOfQuantities()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getItemCountReturnsSumOfQuantities" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getItemCountReturnsSumOfQuantities -->
+        <test-method signature="clearCartRemovesItemsAndCoupon()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="clearCartRemovesItemsAndCoupon" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCartRemovesItemsAndCoupon -->
+        <test-method signature="removeItemRemovesProductFromCart()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="removeItemRemovesProductFromCart" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemRemovesProductFromCart -->
+        <test-method signature="removeCouponRemovesAppliedCoupon()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="removeCouponRemovesAppliedCoupon" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeCouponRemovesAppliedCoupon -->
+        <test-method signature="updateQuantityChangesItemCount()[pri:0, instance:am.gortsup.testing.service.ShoppingCartServiceTest@55040f2f]" started-at="2026-10-14T20:28:59 GMT+04:00" name="updateQuantityChangesItemCount" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateQuantityChangesItemCount -->
+      </class> <!-- am.gortsup.testing.service.ShoppingCartServiceTest -->
+      <class name="am.gortsup.testing.service.InventoryServiceTest">
+        <test-method signature="deductStockRemovesReservedUnits()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="deductStockRemovesReservedUnits" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deductStockRemovesReservedUnits -->
+        <test-method signature="getReservedStockStartsAtZero()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getReservedStockStartsAtZero" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReservedStockStartsAtZero -->
+        <test-method signature="getStockReturnsZeroForUnknownProduct()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getStockReturnsZeroForUnknownProduct" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStockReturnsZeroForUnknownProduct -->
+        <test-method signature="isInStockChecksRequestedQuantity()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="isInStockChecksRequestedQuantity" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isInStockChecksRequestedQuantity -->
+        <test-method signature="reserveStockMovesUnitsToReservedStock()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="reserveStockMovesUnitsToReservedStock" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reserveStockMovesUnitsToReservedStock -->
+        <test-method signature="releaseStockReturnsUnitsToAvailableStock()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="releaseStockReturnsUnitsToAvailableStock" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseStockReturnsUnitsToAvailableStock -->
+        <test-method signature="reserveStockRejectsQuantityAboveAvailableStock()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="reserveStockRejectsQuantityAboveAvailableStock" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="2" status="PASS">
+          <exception class="am.gortsup.testing.exception.InsufficientStockException">
+            <message>
+              <![CDATA[Cannot reserve 2 units of sku; only 1 available]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.InsufficientStockException: Cannot reserve 2 units of sku; only 1 available
+at am.gortsup.testing.service.InventoryService.reserveStock(InventoryService.java:90)
+at am.gortsup.testing.service.InventoryServiceTest.reserveStockRejectsQuantityAboveAvailableStock(InventoryServiceTest.java:102)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.InsufficientStockException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reserveStockRejectsQuantityAboveAvailableStock -->
+        <test-method signature="restockAddsAvailableUnits()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="restockAddsAvailableUnits" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restockAddsAvailableUnits -->
+        <test-method signature="setStock()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="setStock" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setStock -->
+        <test-method signature="setStockRejectsNegativeQuantity()[pri:0, instance:am.gortsup.testing.service.InventoryServiceTest@6ee12bac]" started-at="2026-10-14T20:28:59 GMT+04:00" name="setStockRejectsNegativeQuantity" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <exception class="am.gortsup.testing.exception.ValidationException">
+            <message>
+              <![CDATA[Stock quantity cannot be negative: -1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.ValidationException: Stock quantity cannot be negative: -1
+at am.gortsup.testing.service.InventoryService.setStock(InventoryService.java:29)
+at am.gortsup.testing.service.InventoryServiceTest.setStockRejectsNegativeQuantity(InventoryServiceTest.java:94)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.ValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setStockRejectsNegativeQuantity -->
+      </class> <!-- am.gortsup.testing.service.InventoryServiceTest -->
+      <class name="am.gortsup.testing.service.LoyaltyServiceTest">
+        <test-method signature="addPointsIncreasesCurrentAndLifetimeBalances()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="addPointsIncreasesCurrentAndLifetimeBalances" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPointsIncreasesCurrentAndLifetimeBalances -->
+        <test-method signature="getLifetimePointsReturnsEarnedPoints()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getLifetimePointsReturnsEarnedPoints" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLifetimePointsReturnsEarnedPoints -->
+        <test-method signature="calculateTierReturnsCorrectTierAtBoundaries()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="calculateTierReturnsCorrectTierAtBoundaries" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateTierReturnsCorrectTierAtBoundaries -->
+        <test-method signature="getPointsReturnsCurrentBalance()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getPointsReturnsCurrentBalance" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPointsReturnsCurrentBalance -->
+        <test-method signature="getTierDiscountPercentageReturnsTierDiscount()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getTierDiscountPercentageReturnsTierDiscount" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTierDiscountPercentageReturnsTierDiscount -->
+        <test-method signature="getUserTierUsesLifetimePoints()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="getUserTierUsesLifetimePoints" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserTierUsesLifetimePoints -->
+        <test-method signature="redeemPointsReducesCurrentBalance()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="redeemPointsReducesCurrentBalance" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redeemPointsReducesCurrentBalance -->
+        <test-method signature="transferPointsMovesPointsBetweenUsers()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="transferPointsMovesPointsBetweenUsers" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferPointsMovesPointsBetweenUsers -->
+        <test-method signature="transferPointsRejectsSelfTransfer()[pri:0, instance:am.gortsup.testing.service.LoyaltyServiceTest@400cff1a]" started-at="2026-10-14T20:28:59 GMT+04:00" name="transferPointsRejectsSelfTransfer" finished-at="2026-10-14T20:28:59 GMT+04:00" duration-ms="0" status="PASS">
+          <exception class="am.gortsup.testing.exception.ValidationException">
+            <message>
+              <![CDATA[Cannot transfer points to the same account]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[am.gortsup.testing.exception.ValidationException: Cannot transfer points to the same account
+at am.gortsup.testing.service.LoyaltyService.transferPoints(LoyaltyService.java:156)
+at am.gortsup.testing.service.LoyaltyServiceTest.transferPointsRejectsSelfTransfer(LoyaltyServiceTest.java:94)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.TestNG.privateMain(TestNG.java:1430)
+at org.testng.TestNG.main(TestNG.java:1394)
+]]>
+            </full-stacktrace>
+          </exception> <!-- am.gortsup.testing.exception.ValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferPointsRejectsSelfTransfer -->
+      </class> <!-- am.gortsup.testing.service.LoyaltyServiceTest -->
+    </test> <!-- Service Tests -->
+  </suite> <!-- Testing Task Test Suite -->
+</testng-results>

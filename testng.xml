@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing Task Test Suite" verbose="1">
+    <test name="Utility Tests">
+        <classes>
+            <class name="am.gortsup.testing.util.ValidationUtilsTest"/>
+            <class name="am.gortsup.testing.util.StringUtilsTest"/>
+            <class name="am.gortsup.testing.util.MathAndFinanceUtilsTest"/>
+            <class name="am.gortsup.testing.util.DateTimeUtilsTest"/>
+        </classes>
+    </test>
+    <test name="Service Tests">
+        <classes>
+            <class name="am.gortsup.testing.service.UserServiceTest"/>
+            <class name="am.gortsup.testing.service.ProductCatalogServiceTest"/>
+            <class name="am.gortsup.testing.service.InventoryServiceTest"/>
+            <class name="am.gortsup.testing.service.ShoppingCartServiceTest"/>
+            <class name="am.gortsup.testing.service.OrderServiceTest"/>
+            <class name="am.gortsup.testing.service.LoyaltyServiceTest"/>
+        </classes>
+    </test>
+</suite>
